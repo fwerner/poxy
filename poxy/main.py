@@ -98,7 +98,7 @@ def main(invoker=True):
 	args.add_argument(
 		r'--html',  #
 		default=True,
-		action=argparse.BooleanOptionalAction,
+		action=r'store_true',
 		help=r'specify whether HTML output is required'
 	)
 	args.add_argument(
@@ -137,13 +137,13 @@ def main(invoker=True):
 	args.add_argument(
 		r'--xml',  #
 		default=False,
-		action=argparse.BooleanOptionalAction,
+		action=r'store_true',
 		help=r'specify whether XML output is required'
 	)
 	args.add_argument(
 		r'--werror',  #
 		default=None,
-		action=argparse.BooleanOptionalAction,
+		action=r'store_true',
 		help=r"override the treating of warnings as errors (default: read from config)"
 	)
 	args.add_argument(
